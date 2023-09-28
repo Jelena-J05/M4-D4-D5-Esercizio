@@ -1,0 +1,160 @@
+body {
+    width: 100;
+}
+
+nav img:first-of-type {
+    width: 90px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 80px;
+}
+
+#cartIcon {
+    width: 58px;
+    height: 58px;
+    position: relative;
+    left: 16px;
+}
+
+#cartItemCount {
+    position: absolute;
+}
+
+.navbar {
+    gap: 150px;
+    height: 100px;
+}
+
+.letter-transition-container {
+    position: relative;
+    width: 750px;
+    overflow: hidden;
+    font-size: 20px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.letter-transition {
+    transition: opacity 0.3s ease;
+}
+
+.hidden {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+main input {
+    height: 55px;
+    width: 300px;
+}
+
+footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    aspect-ratio: 1/1;
+}
+
+.custom-ellipsis {
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.info-div {
+    display: flex;
+    flex: wrap;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.price {
+    font-weight: bold;
+}
+
+#bookImage {
+    width: 300px;
+    height: 350px;
+}
+
+.searchBox {
+    position: absolute;
+    transform: translate(-50%, 50%);
+    background: #2f3640;
+    height: 50px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+.searchBox:hover>.searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover>.searchButton {
+    background: white;
+    color: #2f3640;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    padding-bottom: 20px;
+
+}
+
+@media screen and (max-width: 620px) {
+    .searchBox:hover>.searchInput {
+        width: 150px;
+        padding: 0 6px;
+    }
+}
